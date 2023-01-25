@@ -12,6 +12,7 @@ phases:
 
     commands:
       - echo Updating and Installing system dependencies...
+      - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
       - apt-get update -y -q
 
       - echo Installing Google Chrome for testing
