@@ -14,6 +14,8 @@ phases:
 
   build:
     commands:
+      # Use correct GPG key for Yarn
+      - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
       # Update system packages
       - apt-get update -y -q
       # Install dependencies
